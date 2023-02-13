@@ -5,6 +5,7 @@
 <link href="template/css/style.css" rel="stylesheet">
 
 @endsection
+@section("title","Gestion Utilisateur")
 @section("content")
 
     <div class="container-fluid">

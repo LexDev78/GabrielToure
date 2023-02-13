@@ -16,7 +16,7 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a class="collapse-item" href="{{route('user.index')}}">Ajouter un Utilisateur</a></li>
-                    <li><a class="collapse-item" href="{{route('Visite.index')}}">Sessions Utilisateur</a></li>
+                    <li><a class="collapse-item" href="{{route('session.index')}}">Sessions Utilisateur</a></li>
                     <li><a class="collapse-item" href="{{route('test.index')}}">Historique actions</a></li>
                 </ul>
 

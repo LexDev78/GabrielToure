@@ -37,9 +37,6 @@
                                                         <td class="text-bold-500">{{$rapports->patient_id}}</td>
                                                        <td class="text-bold-500">{{$rapports->user_id}}</td>
                                                                                                              
-                                                     
-
-
                                                 <td>
                                                     <a class="btn btn-primary" data-bs-toggle="modal"
                                                     data-bs-target="#rapportUpdate{{$rapports->id}}" href="#">

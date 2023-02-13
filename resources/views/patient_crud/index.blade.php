@@ -2,6 +2,7 @@
 
 
 @section('content')
+@section("title","Gestions des Patients")
 <section class="section">
 <div class="row" id="table-striped">
     <section class="section">
