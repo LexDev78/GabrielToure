@@ -8,7 +8,17 @@
                 <div class="card-header"> Creation de compte</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+
+
+ <form method="POST" action="{{ route('register') }}">
                         @csrf
 
                         <div class="row mb-3">
@@ -96,9 +106,3 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
