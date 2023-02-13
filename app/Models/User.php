@@ -39,6 +39,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function sessions()
+    {
+        return $this->hasMany(Session::class);
+    }
+
     /**
      * The attributes that should be cast.
      *

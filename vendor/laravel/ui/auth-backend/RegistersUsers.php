@@ -7,6 +7,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Type_user;
+use App\Models\Session;
 
 trait RegistersUsers
 {
@@ -67,6 +68,7 @@ trait RegistersUsers
     protected function registered(Request $request, $user)
     {
         //
+        Session::create(['user_id'=>Auth::user()->id]);
         $link = "/";
         return $link;
     }

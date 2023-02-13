@@ -2,6 +2,7 @@
 
 namespace Illuminate\Foundation\Auth;
 
+use App\Models\Session;
 use App\Models\Type_user;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
@@ -137,6 +138,7 @@ trait AuthenticatesUsers
     protected function authenticated(Request $request, $user)
     {
         //
+        Session::create(['user_id'=>Auth::user()->id]);;
         $response["link"] = "/";
         $response["message"]="Bienvenu".Auth::user()->nom;
         return $response;
@@ -175,6 +177,8 @@ trait AuthenticatesUsers
      */
     public function logout(Request $request)
     {
+       $session= Auth::user()->sessions->last();
+       $session->update(["updated_at"=>now()]);
         $this->guard()->logout();
 
         $request->session()->invalidate();
