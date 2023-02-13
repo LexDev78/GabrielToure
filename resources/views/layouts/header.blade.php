@@ -10,8 +10,7 @@
   <div class="input-group-append">
   <span class="input-group-text">
   <a href="javascript:void(0)">
-     Dernière Session
-    <span class="">{{Auth::user()->sessions->last()->updated_at->format('d M Y à H:i')}}</span>
+  <i class="flaticon-381-search-2"></i>
   </a>
   </span>
   </div>
@@ -91,13 +90,7 @@
   <li>
   <div class="timeline-panel">
   <div class="media mr-2">
-    @if(Auth::user()->profile){
-         <img alt="image" width="50" src="images/{{ Auth::user()->profile }}">
-    }else{
-        <img alt="image" width="50" src="images/1.jpg">
-    }
-    @endif
-
+  <img alt="image" width="50" src="images/{{ Auth::user()->profile }}">
   </div>
   <div class="media-body">
   <h6 class="mb-1">Dr sultads Send you Photo</h6>
