@@ -90,7 +90,7 @@
   <li>
   <div class="timeline-panel">
   <div class="media mr-2">
-  <img alt="image" width="50" src="images/avatar/1.jpg">
+  <img alt="image" width="50" src="images/{{ Auth::user()->profile }}">
   </div>
   <div class="media-body">
   <h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -213,7 +213,7 @@
   </li>
   <li class="nav-item dropdown header-profile">
   <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-  <img src="images/profile/pic1.jpg" width="20" alt="">
+  <img src="images/{{ Auth::user()->profile }}" width="20" alt="">
   <div class="header-info">
   <span>{{ Auth::user()->nom . ' ' . Auth::user()->prenom }}</span>
   <small>{{ Auth::user()->type_user->libelle }}</small>
