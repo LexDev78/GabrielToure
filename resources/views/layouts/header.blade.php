@@ -90,7 +90,13 @@
   <li>
   <div class="timeline-panel">
   <div class="media mr-2">
-  <img alt="image" width="50" src="images/{{ Auth::user()->profile }}">
+    @if(Auth::user()->profile){
+         <img alt="image" width="50" src="images/{{ Auth::user()->profile }}">
+    }else{
+        <img alt="image" width="50" src="images/1.jpg">
+    }
+    @endif
+
   </div>
   <div class="media-body">
   <h6 class="mb-1">Dr sultads Send you Photo</h6>
