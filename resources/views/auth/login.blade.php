@@ -32,6 +32,7 @@
 									<div class="text-center mb-3">
 										<img src="images/gabriel-toure1.jpg" alt="" height="80px" width="80px" class="rounded cercle">
 									</div>
+                                    <a href="{{ route('register') }}">Register</a>
                                     <h4 class="text-center mb-4">Connetez vous!!!!</h4>
                                    <form method="POST" action="{{ route('login') }}">
                          @csrf

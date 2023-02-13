@@ -45,14 +45,15 @@ class OperationController extends Controller
         //
         $this->validate($request, [
             "user_id" => 'required',
-            "patient_id" => 'required',
+            "patient_matricule" => 'required',
             "date" => 'required',
             "description" => 'required'
 
         ]);
-        $operation = Operation::create([
+        $patient_id = Patient::where('matricule', $request->patient_matricule)->first()->id;
+     Operation::create([
             'user_id' => $request->user_id,
-            'patient_id' => $request->patient_id,
+            'patient_id' => $patient_id,
             'date' => $request->date,
             'description' => $request->description
         ]);
