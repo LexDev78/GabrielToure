@@ -3,7 +3,7 @@
         <div class="main-profile">
             <div class="image-bx">
                 <img src="images/{{Auth::user()->profile}}" alt="">
-                <a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                <a href="{{route('index')}}"><i class="fa fa-cog" aria-hidden="true"></i></a>
             </div>
             <h5 class="name"><span class="font-w400">Salut,</span> {{Auth::user()->nom}}</h5>
             <p class="email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95f8f4e7e4e0f0efefefefd5f8f4fcf9bbf6faf8">{{Auth::user()->email}}</a></p>

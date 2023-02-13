@@ -254,39 +254,14 @@
         <div class="card">
             <div class="card-header border-0 flex-wrap pb-0">
                 <div class="mb-3">
-                    <h4 class="fs-20 text-black">Market Overview</h4>
-                    <p class="mb-0 fs-12 text-black">Lorem ipsum dolor sit amet, consectetur</p>
+                    <h4 class="fs-20 text-black">Evolution </h4>
+                    <p class="mb-0 fs-12 text-black">Evolution des visites par rapport</p>
                 </div>
-                <div class="d-flex flex-wrap mb-2">
-                    <div class="custom-control check-switch custom-checkbox mr-4 mb-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck9">
-                        <label class="custom-control-label" for="customCheck9">
-                            <span class="d-block  font-w500 mt-2">BTC</span>
-                        </label>
-                    </div>
-                    <div class="custom-control check-switch custom-checkbox mr-4 mb-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck91">
-                        <label class="custom-control-label" for="customCheck91">
-                            <span class="d-block  font-w500 mt-2">XRP</span>
-                        </label>
-                    </div>
-                    <div class="custom-control check-switch custom-checkbox mr-4 mb-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck92">
-                        <label class="custom-control-label" for="customCheck92">
-                            <span class="d-block font-w500 mt-2">ETH</span>
-                        </label>
-                    </div>
-                    <div class="custom-control check-switch custom-checkbox mr-4 mb-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck93">
-                        <label class="custom-control-label" for="customCheck93">
-                            <span class="d-block font-w500 mt-2">ZEC</span>
-                        </label>
-                    </div>
-                </div>
+
                 <select class="style-1 btn-secondary default-select">
-                    <option>Weekly (2021)</option>
-                    <option>Daily (2021)</option>
-                    <option>Yearly (2021)</option>
+                    <option>Année (2020)</option>
+                    <option>Année (2021)</option>
+                    <option>Année (2022)</option>
                 </select>
             </div>
             <div class="card-body pb-2 px-3">
@@ -297,7 +272,7 @@
     <div class="col-xl-3 col-xxl-4">
         <div class="card">
             <div class="card-header border-0 pb-0">
-                <h4 class="fs-20 text-black">Current Statistic</h4>
+                <h4 class="fs-20 text-black">Paiements sur Frais</h4>
             </div>
             <div class="card-body pb-0">
                 <div id="currentChart" class="current-chart"></div>
@@ -307,10 +282,10 @@
                             <svg class="mr-2" width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="15" height="15" rx="7.5" fill="#EB8153"></rect>
                             </svg>
-                            <span class="fs-14">Income (66%)</span>
+                            <span class="fs-14">Ce mois (66%)</span>
                         </div>
                         <div>
-                            <h5 class="mb-0">$167,884.21</h5>
+                            <h5 class="mb-0">167 884 FCFA</h5>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between mb-2 align-items-center">
@@ -319,10 +294,10 @@
                                 <rect width="15" height="15" rx="7.5" fill="#71B945"></rect>
                             </svg>
 
-                            <span class="fs-14">Income (50%)</span>
+                            <span class="fs-14">Cette Année (50%)</span>
                         </div>
                         <div>
-                            <h5 class="mb-0">$56,411.33</h5>
+                            <h5 class="mb-0"> 5 612 411 FCFA</h5>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between mb-2 align-items-center">
@@ -330,10 +305,10 @@
                             <svg class="mr-2" width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="15" height="15" rx="7.5" fill="#4A8CDA"></rect>
                             </svg>
-                            <span class="fs-14">Income (11%)</span>
+                            <span class="fs-14">Total (88%)</span>
                         </div>
                         <div>
-                            <h5 class="mb-0">$81,981.22</h5>
+                            <h5 class="mb-0">8 198 122 FCFA</h5>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between mb-2 align-items-center">
