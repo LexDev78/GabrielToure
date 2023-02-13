@@ -1,7 +1,5 @@
-<footer class="sticky-footer bg-white">
-    <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Genie Logiciel 2023</span>
-        </div>
+<div class="footer">
+    <div class="copyright">
+        <p>Copyright © Conçue &amp; Developper par <a href="../index.htm" target="_blank">M.Kone &amp; L.Gassamba</a> 2023</p>
     </div>
-</footer>
+</div>

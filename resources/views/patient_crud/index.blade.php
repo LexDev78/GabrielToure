@@ -1,4 +1,4 @@
-@extends('layouts.side_header')
+@extends('layouts.master')
 
 
 @section('content')
@@ -13,8 +13,7 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <p class="card-text">Pour <a href="" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#patientAdd">insérer un nouvelle ligne</a></p>
+                            <p class="card-text">Pour <a href="#" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#patientAdd">insérer un nouvelle ligne</a></p>
                                 <!-- Table with outer spacing -->
                                 <div class="table-responsive">
                                     <table class="table table-lg">

@@ -1,125 +1,47 @@
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('index')}}">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    CHU
-                </div>
-                <div class="sidebar-brand-text mx-3">Gabriel Toure<sup></sup></div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="{{route('index')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Tableau de bord</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
+<div class="deznav">
+    <div class="deznav-scroll">
+        <div class="main-profile">
+            <div class="image-bx">
+                <img src="images/{{Auth::user()->profile}}" alt="">
+                <a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i></a>
             </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Utilisateurs</span>
+            <h5 class="name"><span class="font-w400">Salut,</span> {{Auth::user()->nom}}</h5>
+            <p class="email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95f8f4e7e4e0f0efefefefd5f8f4fcf9bbf6faf8">{{Auth::user()->email}}</a></p>
+        </div>
+        <ul class="metismenu" id="menu">
+            <li class="nav-label first">Menu Principal</li>
+            <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-144-layout"></i>
+                    <span class="nav-text">Gestion Utilisateur</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Gestion Utilisateurs:</h6>
-                        <a class="collapse-item" href="{{route('user.index')}}">Ajouter Utilisateurs</a>
-                        <a class="collapse-item" href="cards.html">Sessions Utilisateurs</a>
-                        <a class="collapse-item" href="cards.html">Historique Action</a>
-                    </div>
-                </div>
-            </li>
+                <ul aria-expanded="false">
+                    <li><a class="collapse-item" href="{{route('Patient.index')}}">Ajouter un Utilisateur</a></li>
+                    <li><a class="collapse-item" href="{{route('Visite.index')}}">Sessions Utilisateur</a></li>
+                    <li><a class="collapse-item" href="{{route('test.index')}}">Historique actions</a></li>
+                </ul>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Activités</span>
+            </li>
+            <li class="nav-label">Menu Mineur</li>
+            <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                <i class="flaticon-077-menu-1"></i>
+                    <span class="nav-text">Apps</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Activités:</h6>
-                        <a class="collapse-item" href="{{route('Patient.index')}}">Patients</a>
-                        <a class="collapse-item" href="{{route('Visite.index')}}">Visite</a>
-                        <a class="collapse-item" href="{{route('test.index')}}">Test</a>
-                        <a class="collapse-item" href="{{route('Paiement.index')}}">Paiements</a>
-                        <a class="collapse-item" href="{{route('traitement.index')}}">Traitement</a>
-                        <a class="collapse-item" href="{{route('salle.index')}}">Salle</a>
-                        <a class="collapse-item" href="{{route('rapport.index')}}">Rapport</a>
-                        <a class="collapse-item" href="{{route('operation.index')}}">Operation</a>
-                    </div>
-                </div>
+                <ul aria-expanded="false">
+                    <li><a class="collapse-item" href="{{route('Patient.index')}}">Patients</a></li>
+                    <li><a class="collapse-item" href="{{route('Visite.index')}}">Visite</a></li>
+                    <li><a class="collapse-item" href="{{route('test.index')}}">Test</a></li>
+                    <li><a class="collapse-item" href="{{route('Paiement.index')}}">Paiements</a></li>
+                    <li><a class="collapse-item" href="{{route('traitement.index')}}">Traitement</a></li>
+                    <li><a class="collapse-item" href="{{route('salle.index')}}">Salle</a></li>
+                    <li><a class="collapse-item" href="{{route('rapport.index')}}">Rapport</a></li>
+                    <li><a class="collapse-item" href="{{route('operation.index')}}">Operation</a></li>
+                </ul>
             </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-
-
+            
         </ul>
-        <!-- End of Sidebar -->
+        <div class="copyright">
+            <p><strong>Genie Logiciel</strong> © 2023 </p>
+            <p class="fs-12">Conçu et Developper <span class="heart"></span> par M.Kone & L.Gassamba</p>
+        </div>
+    </div>
+</div>

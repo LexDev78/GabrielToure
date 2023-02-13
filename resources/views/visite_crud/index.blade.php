@@ -1,4 +1,4 @@
-@extends('layouts.side_header')
+@extends('layouts.master')
 
 
 @section('content')
@@ -13,8 +13,8 @@
                     </div>
                     <div class="card-content">
                         <div class="card-body">
-                            <p class="card-text">Pour <a href="" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#visiteAdd">insérer un nouvelle ligne</a></p>
+                            <p class="card-text">Pour <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#visiteAdd">insérer un nouvelle ligne</button></p>
                                 <!-- Table with outer spacing -->
                                 <div class="table-responsive">
                                     <table class="table table-lg">
@@ -42,10 +42,10 @@
 
 
                                             <td>
-                                                <a class="btn btn-primary" data-bs-toggle="modal"
+                                                <button class="btn btn-primary" data-bs-toggle="modal"
                                                 data-bs-target="#visiteUpdate{{$visite->id}}" href="#">
                                                 Modifier
-                                            </a>
+                                            </button>
                                         </td>
                                         <td>
                                             <a class="btn btn-danger" data-bs-toggle="modal"

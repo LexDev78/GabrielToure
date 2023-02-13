@@ -1,13 +1,8 @@
-@extends('layouts.side_header')
+@extends('layouts.master')
 
 
 @section('content')
 
-
-
-{{--  --}}
-
-<div class="container-fluid">
 
     <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Paiement</h1>
@@ -191,6 +186,5 @@
             </div> --}}
         </div>
     </div>
-</div>
 
 @endsection
