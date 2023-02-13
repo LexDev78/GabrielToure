@@ -19,7 +19,8 @@ class RapportController extends Controller
         $rapport= Rapport::all();
         $patients=Patient::all();
         $users = User::all();
-        return view('rapport_crud.index', compact('rapport','patients','users'));
+        $laborantins= User::where('type_user_id',3)->get();
+        return view('rapport_crud.index', compact('rapport','patients','users','laborantins'));
     }
 
     /**
@@ -33,7 +34,8 @@ class RapportController extends Controller
         $rapport=Rapport::all();
          $patient=Patient::all();
          $users=User::all();
-         return view("rapport_crud.index", compact('rapport', 'patient', 'users'));
+         $laborantins= User::where('type_user_id',3)->get();
+         return view("rapport_crud.index", compact('rapport', 'patient', 'users','laborantins'));
     }
 
     /**
@@ -44,27 +46,25 @@ class RapportController extends Controller
      */
     public function store(Request $request)
     {
+        $piece_name="";
+        if($request->file("piece_jointe"))
+        {
+            $piece = $request->file("piece_jointe");
+            $piece_name = time().'.'.$piece->getClientOriginalExtension();
+            $piece->move(storage_path("app/public/".$piece_name));
+
+        }
         $this->validate($request, [
             "description" => 'required',
-            "resultat" => 'required',
-            "piece_jointe" => 'required',
             "patient_id" => 'required',
             "user_id" => 'required'
-           
-           
-
-
         ]);
         $rapport = Rapport::create([
             'description' => $request->description,
             'resultat' => $request->resultat,
-            'piece_jointe' => $request->resultat,
+            'piece_jointe' => $piece_name,
             'patient_id' => $request->patient_id,
             'user_id' => $request->user_id,
-            
-           
-
-
         ]);
         return redirect()->back();
     }

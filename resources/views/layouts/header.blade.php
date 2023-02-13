@@ -10,7 +10,8 @@
   <div class="input-group-append">
   <span class="input-group-text">
   <a href="javascript:void(0)">
-  <i class="flaticon-381-search-2"></i>
+     Dernière Session
+    <span class="">{{Auth::user()->sessions->last()->updated_at->format('d M Y à H:i')}}</span>
   </a>
   </span>
   </div>

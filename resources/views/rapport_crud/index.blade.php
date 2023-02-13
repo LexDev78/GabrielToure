@@ -248,9 +248,9 @@
                             <div class="col-md-6">
                             <div class="form-group has-icon-left">
                             <div class="position-relative">
-                            <label for="user">Nom_Utilisateur</label>
+                            <label for="user">Laboratin</label>
                                     <select name="user_id" class="form-control" id="user" >
-                                    @foreach($users as $user)
+                                    @foreach($laborantins as $user)
                                         <option value="{{ $user->nom }}"></option>
                                         <option value="{{$user->id}}">{{$user -> username}}</option>
                                     @endforeach
@@ -262,7 +262,7 @@
                     <div class="col-md-6">
                         <div class="form-group has-icon-left">
                             <div class="position-relative">
-                                <label for="patient">Nom_patient</label>
+                                <label for="patient">Patient</label>
                                 <select name="patient_id" class="form-control" id="patient" >
                                     @foreach($patients as $patient)
                                         <option value="{{ $patient->nom }}"></option>
@@ -288,18 +288,7 @@
                     <div class="col-md-6">
                         <div class="form-group has-icon-left">
                             <div class="position-relative">
-                                <input type="text" autocomplete="off" name="resultat"
-                                class="form-control"  placeholder="Resultat!...">
-                                <div class="form-control-icon">
-                                    <i class="bi bi-pencil"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group has-icon-left">
-                            <div class="position-relative">
-                                <input type="text" autocomplete="off" name="piece_jointe"
+                                <input type="file" autocomplete="off" name="piece_jointe"
                                 class="form-control"  placeholder="Piece Jointe!...">
                                 <div class="form-control-icon">
                                     <i class="bi bi-pencil"></i>
