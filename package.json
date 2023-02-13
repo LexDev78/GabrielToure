@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.2.3",
+        "ngx-toastr": "^16.0.2",
         "sass": "^1.58.0",
         "toastr": "^2.1.4"
     }

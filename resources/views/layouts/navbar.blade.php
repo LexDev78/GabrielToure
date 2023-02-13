@@ -15,7 +15,7 @@
                     <span class="nav-text">Gestion Utilisateur</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a class="collapse-item" href="{{route('Patient.index')}}">Ajouter un Utilisateur</a></li>
+                    <li><a class="collapse-item" href="{{route('user.index')}}">Ajouter un Utilisateur</a></li>
                     <li><a class="collapse-item" href="{{route('Visite.index')}}">Sessions Utilisateur</a></li>
                     <li><a class="collapse-item" href="{{route('test.index')}}">Historique actions</a></li>
                 </ul>
@@ -37,7 +37,7 @@
                     <li><a class="collapse-item" href="{{route('operation.index')}}">Operation</a></li>
                 </ul>
             </li>
-            
+
         </ul>
         <div class="copyright">
             <p><strong>Genie Logiciel</strong> © 2023 </p>
