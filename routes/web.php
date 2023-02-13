@@ -12,6 +12,7 @@ use App\Http\Controllers\PaiementController;
 use App\Http\Controllers\SalleController;
 use App\Http\Controllers\TraitementController;
 use App\Http\Controllers\RapportController;
+use App\Http\Controllers\SessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,6 +67,9 @@ Route::group(['middleware'=>'auth'],function()
 
     //Route operation
     Route::resource('operation', OperationController::class);
+
+    //Route session
+    Route::resource('session', SessionController::class);
 
 });
 //=========================================End Group Middleware Auth========================//

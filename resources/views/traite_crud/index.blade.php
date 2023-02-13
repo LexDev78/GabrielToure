@@ -1,6 +1,4 @@
 @extends('layouts.master')
-
-
 @section('content')
 <section class="section">
     <div class="row" id="table-striped">
