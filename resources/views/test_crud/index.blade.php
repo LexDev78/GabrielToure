@@ -30,8 +30,8 @@
                                             <tbody>
                                                 @forelse ($test as $test)
                                                 <tr>
-                                                        <td class="text-bold-500">{{$test->user_id}}</td>
-                                                        <td class="text-bold-500">{{$test->patient_id}}</td>
+                                                        <td class="text-bold-500">{{$test->user->nom." ".$test->user->nom}}</td>
+                                                        <td class="text-bold-500">{{$test->patient->nom." ".$test->patient->prenom}}</td>
                                                         <td class="text-bold-500">{{$test->nom}}</td>
                                                         <td class="text-bold-500">{{$test->prix}}</td>
                                                         <td>
